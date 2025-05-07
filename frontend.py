@@ -4,7 +4,9 @@ import pandas as pd
 from datetime import datetime
 
 # Configuration
-BACKEND_URL = "http://localhost:8000"
+# BACKEND_URL = "http://localhost:8000"
+#change to render port
+BACKEND_URL = "https://cryptopulse-cryptocurrency-ai-analysis.onrender.com"
 
 
 # Initialize session state
