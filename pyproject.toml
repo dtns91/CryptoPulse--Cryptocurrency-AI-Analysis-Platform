@@ -1,27 +1,24 @@
-[project]
+[tool.poetry]
 name = "crypto-chatbot"
 version = "0.1.0"
 description = "A FastAPI-based platform for GenAI-powered cryptocurrency analysis, providing real-time chat, price history, news summaries, and technical insights, with a modern Streamlit frontend and robust, reproducible dependency management using Poetry."
-authors = [
-    {name = "Derrick Tan"}
-]
+authors = ["Derrick Tan"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "fastapi (>=0.115.12,<0.116.0)",
-    "uvicorn (>=0.34.2,<0.35.0)",
-    "exa-py (>=1.12.1,<2.0.0)",
-    "python-dotenv (>=1.1.0,<2.0.0)",
-    "requests (>=2.32.3,<3.0.0)",
-    "pydantic (>=2.11.4,<3.0.0)",
-    "google-generativeai (>=0.8.5,<0.9.0)",
-    "streamlit (>=1.45.0,<2.0.0)",
-    "pandas (>=2.2.3,<3.0.0)",
-    "sqlmodel (>=0.0.24,<0.0.25)",
-    "sqlalchemy (>=2.0.40,<3.0.0)",
-    "typing-extensions (>=4.13.2,<5.0.0)"
-]
 
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0.0"
+fastapi = ">=0.115.12,<0.116.0"
+uvicorn = ">=0.34.2,<0.35.0"
+exa-py = ">=1.12.1,<2.0.0"
+python-dotenv = ">=1.1.0,<2.0.0"
+requests = ">=2.32.3,<3.0.0"
+pydantic = ">=2.11.4,<3.0.0"
+google-generativeai = ">=0.8.5,<0.9.0"
+streamlit = ">=1.45.0,<2.0.0"
+pandas = ">=2.2.3,<3.0.0"
+sqlmodel = ">=0.0.24,<0.0.25"
+sqlalchemy = ">=2.0.40,<3.0.0"
+typing-extensions = ">=4.13.2,<5.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
