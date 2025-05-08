@@ -366,7 +366,7 @@ google-api-core = {version = ">=1.34.1,<2.0.dev0 || >=2.11.dev0,<3.0.0dev", extr
 google-auth = ">=2.14.1,<2.24.0 || >2.24.0,<2.25.0 || >2.25.0,<3.0.0dev"
 proto-plus = [
     {version = ">=1.25.0,<2.0.0dev", markers = "python_version >= \"3.13\""},
-    {version = ">=1.22.3,<2.0.0dev"},
+    {version = ">=1.22.3,<2.0.0dev", markers = "python_version < \"3.13\""},
 ]
 protobuf = ">=3.20.2,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<6.0.0dev"
 
@@ -395,7 +395,7 @@ grpcio-status = [
 ]
 proto-plus = [
     {version = ">=1.25.0,<2.0.0", markers = "python_version >= \"3.13\""},
-    {version = ">=1.22.3,<2.0.0", markers = "python_version < \"3.13\""},
+    {version = ">=1.22.3,<2.0.0"},
 ]
 protobuf = ">=3.19.5,<3.20.0 || >3.20.0,<3.20.1 || >3.20.1,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<7.0.0"
 requests = ">=2.18.0,<3.0.0"
@@ -427,14 +427,14 @@ uritemplate = ">=3.0.1,<5"
 
 [[package]]
 name = "google-auth"
-version = "2.40.0"
+version = "2.40.1"
 description = "Google Authentication Library"
 optional = false
 python-versions = ">=3.7"
 groups = ["main"]
 files = [
-    {file = "google_auth-2.40.0-py2.py3-none-any.whl", hash = "sha256:dc3a5078acb1043c3e43685c22d628afe40af8559cf561de388e0c939280fcc8"},
-    {file = "google_auth-2.40.0.tar.gz", hash = "sha256:c277cf39f7c192d8540eb6331c08b5a0796e8041af8343ae73dd6b269732ca6c"},
+    {file = "google_auth-2.40.1-py2.py3-none-any.whl", hash = "sha256:ed4cae4f5c46b41bae1d19c036e06f6c371926e97b19e816fc854eff811974ee"},
+    {file = "google_auth-2.40.1.tar.gz", hash = "sha256:58f0e8416a9814c1d86c9b7f6acf6816b51aba167b2c76821965271bac275540"},
 ]
 
 [package.dependencies]
@@ -1857,27 +1857,11 @@ files = [
 
 [[package]]
 name = "rsa"
-version = "4.2"
-description = "Pure-Python RSA implementation"
-optional = false
-python-versions = "*"
-groups = ["main"]
-markers = "python_version >= \"3.13\""
-files = [
-    {file = "rsa-4.2.tar.gz", hash = "sha256:aaefa4b84752e3e99bd8333a2e1e3e7a7da64614042bd66f775573424370108a"},
-]
-
-[package.dependencies]
-pyasn1 = ">=0.1.3"
-
-[[package]]
-name = "rsa"
 version = "4.9.1"
 description = "Pure-Python RSA implementation"
 optional = false
 python-versions = "<4,>=3.6"
 groups = ["main"]
-markers = "python_version < \"3.13\""
 files = [
     {file = "rsa-4.9.1-py3-none-any.whl", hash = "sha256:68635866661c6836b8d39430f97a996acbd61bfa49406748ea243539fe239762"},
     {file = "rsa-4.9.1.tar.gz", hash = "sha256:e7bdbfdb5497da4c07dfd35530e1a902659db6ff241e39d9953cad06ebd0ae75"},
@@ -2336,5 +2320,5 @@ watchmedo = ["PyYAML (>=3.10)"]
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.10"
-content-hash = "494993db904d770f802b2649ce296afcb44baf8b5e2bba36d368e5ad1e1d6a3c"
+python-versions = "^3.10"
+content-hash = "a6efc4cfab75d7845add6f8a89c2463ba876dd8f6da429ceeada3aa24fec4645"
